@@ -6,14 +6,49 @@ const TRIPS = {
   france: {
     name: "Frankrijk",
     subtitle: "5 dagen \u00B7 Normandi\u00EB & Mont Saint-Michel",
-    color: "#1B2A4A",
-    accent: "#C9A84C",
+    color: "#4A90E2",
+    accent: "#D4AF37",
     stops: [
-      { day: 1, name: "Vertrek", desc: "Richting zuidwest, lunchstop onderweg" },
-      { day: 2, name: "Honfleur", desc: "Betoverend havenstadje, impressionistische sfeer" },
-      { day: 3, name: "D-Day Stranden", desc: "Omaha Beach, kliffen & herdenkingen" },
-      { day: 4, name: "Mont Saint-Michel", desc: "De iconische abdij bij zonsondergang" },
-      { day: 5, name: "Chartres & terug", desc: "Kathedraal bezoeken, dan naar huis" },
+      {
+        day: 1, name: "Vertrek", desc: "Richting zuidwest, lunchstop onderweg",
+        detail: "We vertrekken 's ochtends vroeg en rijden richting het zuiden van Frankrijk. Onderweg stoppen we voor een ontspannen lunch in een typisch Frans dorpje. De roadtrip zelf is al een avontuur \u2014 groene heuvels, pittoreske stadjes, en dat langzame gevoel dat vakantie officieel begonnen is.",
+        images: [
+          { url: "https://images.unsplash.com/photo-1539600937385-bd902dd379cc?w=800&q=80", alt: "Frans platteland met groene heuvels" },
+          { url: "https://images.unsplash.com/photo-1723395439174-4a5c26eec556?w=800&q=80", alt: "Bloeiende velden langs een landweg" },
+        ],
+      },
+      {
+        day: 2, name: "Honfleur", desc: "Betoverend havenstadje, impressionistische sfeer",
+        detail: "Honfleur is een van de mooiste havenstadjes van Frankrijk. De kleurrijke gevels langs de Vieux Bassin zijn het decor geweest van ontelbare impressionistische schilderijen. We slenteren door smalle straatjes, proeven verse cr\u00EApes, en genieten van het uitzicht over de haven bij zonsondergang.",
+        images: [
+          { url: "https://images.unsplash.com/photo-1749429338454-fa1a649c0208?w=800&q=80", alt: "Honfleur haven met kleurrijke gevels" },
+          { url: "https://images.unsplash.com/photo-1748624185483-3fd96e68c749?w=800&q=80", alt: "Bootjes in de haven van Honfleur" },
+        ],
+      },
+      {
+        day: 3, name: "D-Day Stranden", desc: "Omaha Beach, kliffen & herdenkingen",
+        detail: "Een dag vol indrukwekkende geschiedenis. We bezoeken Omaha Beach, waar de kliffen en bunkers je direct terugbrengen naar 6 juni 1944. De stranden zijn weids en prachtig, en de herdenkingsmonumenten zijn diep aangrijpend. Een ervaring die je nooit vergeet.",
+        images: [
+          { url: "https://images.unsplash.com/photo-1516414490660-1a7954e26981?w=800&q=80", alt: "\u00C9tretat kliffen aan de Normandische kust" },
+          { url: "https://images.unsplash.com/photo-1757874905959-9fc34f5abdaa?w=800&q=80", alt: "Kliffen boven de zee in Normandi\u00EB" },
+        ],
+      },
+      {
+        day: 4, name: "Mont Saint-Michel", desc: "De iconische abdij bij zonsondergang",
+        detail: "Het hoogtepunt van de reis: Mont Saint-Michel. Deze middeleeuwse abdij rijst op uit het water als een sprookjeskasteel. We wandelen door de smalle straatjes omhoog naar de top, waar het uitzicht adembenemend is. Bij zonsondergang kleurt alles goud \u2014 puur magisch.",
+        images: [
+          { url: "https://images.unsplash.com/photo-1667812823347-b5f948dcd658?w=800&q=80", alt: "Mont Saint-Michel" },
+          { url: "https://images.unsplash.com/photo-1578671873592-a7012b752a3a?w=800&q=80", alt: "Mont Saint-Michel bij zonsondergang" },
+        ],
+      },
+      {
+        day: 5, name: "Chartres & terug", desc: "Kathedraal bezoeken, dan naar huis",
+        detail: "Op de terugweg stoppen we in Chartres om de beroemde kathedraal te bewonderen \u2014 een UNESCO-werelderfgoed met de mooiste glas-in-loodramen van Europa. Het blauwe licht dat door de ramen valt is betoverend. Een perfecte afsluiter voordat we huiswaarts keren, vol met mooie herinneringen.",
+        images: [
+          { url: "https://images.unsplash.com/photo-1635473170208-d0334e64d77a?w=800&q=80", alt: "Kathedraal van Chartres" },
+          { url: "https://images.unsplash.com/photo-1635473171860-2cb787258994?w=800&q=80", alt: "Chartres kathedraal interieur" },
+        ],
+      },
     ],
     routePath: "M 20,90 C 50,70 80,45 110,52 C 140,60 150,30 180,22 C 195,18 205,35 210,55",
     markers: [
@@ -27,14 +62,49 @@ const TRIPS = {
   germany: {
     name: "Duitsland",
     subtitle: "5 dagen \u00B7 Zwarte Woud & Sekt Regio",
-    color: "#2D3B2D",
-    accent: "#D4953A",
+    color: "#B22222",
+    accent: "#D4AF37",
     stops: [
-      { day: 1, name: "Rheingau", desc: "Aankomst in de Sekt- en wijnregio" },
-      { day: 2, name: "Wijnhuizen", desc: "Sekt proeven, wijngaard wandelingen" },
-      { day: 3, name: "Heidelberg", desc: "Schilderachtige route naar het zuiden" },
-      { day: 4, name: "Zwarte Woud", desc: "Triberg watervallen, koekoeksklokken, Kirschtorte" },
-      { day: 5, name: "Freiburg & terug", desc: "Freiburg verkennen, dan naar huis" },
+      {
+        day: 1, name: "Rheingau", desc: "Aankomst in de Sekt- en wijnregio",
+        detail: "We rijden naar de Rheingau \u2014 een van de mooiste wijnregio's van Duitsland. Langs de oevers van de Rijn liggen wijngaarden zo ver het oog reikt. We checken in en proeven onze eerste Sekt (Duitse mousserende wijn) met uitzicht over de rivier. Het perfecte begin.",
+        images: [
+          { url: "https://images.unsplash.com/photo-1662486717047-ea680aa453e6?w=800&q=80", alt: "Rivierdal langs de Moezel" },
+          { url: "https://images.unsplash.com/photo-1504279577054-acfeccf8fc52?w=800&q=80", alt: "Groene wijngaarden in de heuvels" },
+        ],
+      },
+      {
+        day: 2, name: "Wijnhuizen", desc: "Sekt proeven, wijngaard wandelingen",
+        detail: "Vandaag draait alles om wijn. We bezoeken traditionele wijnhuizen waar Sekt en Riesling al eeuwenlang worden gemaakt. Wandelen tussen de wijnranken, proeverijen in oude kelders, en genieten van lokale kaasjes en broodjes. Puur genieten in de buitenlucht.",
+        images: [
+          { url: "https://images.unsplash.com/photo-1730058518963-55bc7a9eb791?w=800&q=80", alt: "Wijngaard wandeling in het voorjaar" },
+          { url: "https://images.unsplash.com/photo-1673353348607-ab796515c64c?w=800&q=80", alt: "Bootjes in een kleurrijke haven" },
+        ],
+      },
+      {
+        day: 3, name: "Heidelberg", desc: "Schilderachtige route naar het zuiden",
+        detail: "Via een prachtige route rijden we naar Heidelberg, een van de meest romantische steden van Duitsland. Het kasteel boven de stad biedt een spectaculair uitzicht over de Neckar. We dwalen door de Altstadt, bezoeken de oudste universiteit van Duitsland, en sluiten af met een diner aan de rivier.",
+        images: [
+          { url: "https://images.unsplash.com/photo-1658337071443-ba341f051284?w=800&q=80", alt: "Heidelberg kasteel op de heuvel" },
+          { url: "https://images.unsplash.com/photo-1723816221944-da98c9a8f5ae?w=800&q=80", alt: "Heidelberg plein en oude stad" },
+        ],
+      },
+      {
+        day: 4, name: "Zwarte Woud", desc: "Triberg watervallen, koekoeksklokken, Kirschtorte",
+        detail: "Het Zwarte Woud is pure magie. We bezoeken de beroemde watervallen van Triberg \u2014 de hoogste van Duitsland \u2014 wandelen door dicht, donker bos, en bewonderen handgemaakte koekoeksklokken. Uiteraard proeven we de authentieke Schwarzw\u00E4lder Kirschtorte. Een dag uit een sprookjesboek.",
+        images: [
+          { url: "https://images.unsplash.com/photo-1541500233866-71164d920e0b?w=800&q=80", alt: "Triberg in het Zwarte Woud" },
+          { url: "https://images.unsplash.com/photo-1623173811948-a53b4056e5b2?w=800&q=80", alt: "Waterval in het Zwarte Woud" },
+        ],
+      },
+      {
+        day: 5, name: "Freiburg & terug", desc: "Freiburg verkennen, dan naar huis",
+        detail: "Onze laatste dag brengen we door in Freiburg, de zonnigste stad van Duitsland. De beroemde B\u00E4chle \u2014 kleine waterkanalen door de straten \u2014 geven de stad een unieke charme. We bezoeken de M\u00FCnster, dwalen over de markt, en genieten van onze laatste koffie voordat we vol mooie herinneringen naar huis rijden.",
+        images: [
+          { url: "https://images.unsplash.com/photo-1562247692-b2c83aac9cf8?w=800&q=80", alt: "Freiburg van bovenaf" },
+          { url: "https://images.unsplash.com/photo-1634412116682-a692f58c8e35?w=800&q=80", alt: "Freiburg marktplein" },
+        ],
+      },
     ],
     routePath: "M 20,35 C 50,45 70,85 100,92 C 130,100 150,72 180,62 C 195,58 205,82 210,102",
     markers: [
@@ -174,19 +244,19 @@ body { background: ${C.bg}; -webkit-tap-highlight-color: transparent; }
   width: 40px; height: 40px; z-index: 10;
 }
 
-.fr-front  { background: #1B2A4A; }
-.fr-right  { background: #162240; }
-.fr-left   { background: #111B36; }
-.fr-back   { background: #0E162C; }
-.fr-top    { background: #203360; }
-.fr-bottom { background: #0E162C; }
+.fr-front  { background: #4A90E2; }
+.fr-right  { background: #3D7BCB; }
+.fr-left   { background: #3268B0; }
+.fr-back   { background: #2A5898; }
+.fr-top    { background: #5EA0F0; }
+.fr-bottom { background: #2A5898; }
 
-.de-front  { background: #2D3B2D; }
-.de-right  { background: #253225; }
-.de-left   { background: #1F2B1F; }
-.de-back   { background: #1A241A; }
-.de-top    { background: #354835; }
-.de-bottom { background: #1A241A; }
+.de-front  { background: #B22222; }
+.de-right  { background: #9A1D1D; }
+.de-left   { background: #821818; }
+.de-back   { background: #6E1414; }
+.de-top    { background: #CC2E2E; }
+.de-bottom { background: #6E1414; }
 
 .ribbon-h, .ribbon-v {
   position: absolute; opacity: 0.85;
@@ -221,6 +291,11 @@ body { background: ${C.bg}; -webkit-tap-highlight-color: transparent; }
   transition: transform 1.5s ease;
 }
 .final-line.visible { transform: scaleX(1); }
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
 `;
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -565,7 +640,7 @@ const BowSvg = ({ color }) => (
 
 // ─── Gift Box Component ──────────────────────────────────────────────────────
 
-const GiftBox = React.forwardRef(({ tripKey, className, label, ribbonColor, materialPrefix, onSelect, dismissed, selected, lidOpen, ariaLabel }, ref) => {
+const GiftBox = React.forwardRef(({ tripKey, className, label, ribbonColor, materialPrefix, onSelect, dismissed, selected, lidOpen, ariaLabel, dropShadowColor }, ref) => {
   const boxRef = useRef(null);
   React.useImperativeHandle(ref, () => boxRef.current);
 
@@ -585,7 +660,7 @@ const GiftBox = React.forwardRef(({ tripKey, className, label, ribbonColor, mate
       style={{
         border: 'none', background: 'none', outline: 'none', padding: 0,
         touchAction: 'manipulation',
-        filter: dismissed ? undefined : `drop-shadow(0 12px 24px ${tripKey === 'france' ? 'rgba(27,42,74,0.4)' : 'rgba(45,59,45,0.4)'})`,
+        filter: dismissed ? undefined : `drop-shadow(0 12px 24px ${tripKey === 'france' ? 'rgba(74,144,226,0.4)' : 'rgba(178,34,34,0.4)'})`,
         ...(selected ? {
           left: 'calc(50% - var(--half-size))',
           top: 'calc(50% - var(--half-size))',
@@ -593,7 +668,7 @@ const GiftBox = React.forwardRef(({ tripKey, className, label, ribbonColor, mate
         } : {}),
       }}
     >
-      <div className="box-shadow-el" style={{ boxShadow: `0 30px 40px ${tripKey === 'france' ? 'rgba(27,42,74,0.5)' : 'rgba(45,59,45,0.5)'}` }} />
+      <div className="box-shadow-el" style={{ boxShadow: `0 30px 40px ${tripKey === 'france' ? 'rgba(74,144,226,0.4)' : 'rgba(178,34,34,0.4)'}` }} />
       <div className={`face face-back ${materialPrefix}-back`}>{ribbon}</div>
       <div className={`face face-left ${materialPrefix}-left`}>{ribbon}</div>
       <div className={`face face-right ${materialPrefix}-right`}>{ribbon}</div>
@@ -605,14 +680,16 @@ const GiftBox = React.forwardRef(({ tripKey, className, label, ribbonColor, mate
           <BowSvg color={ribbonColor} />
         </div>
       </div>
-      <div style={{
-        position: 'absolute', bottom: '-28px', left: 0, right: 0, textAlign: 'center',
-      }}>
-        <span style={{
-          fontFamily: 'Inter, sans-serif', fontSize: '12px', letterSpacing: '0.12em',
-          textTransform: 'lowercase', color: C.creamFaint,
-        }}>{label}</span>
-      </div>
+      {label && (
+        <div style={{
+          position: 'absolute', bottom: '-28px', left: 0, right: 0, textAlign: 'center',
+        }}>
+          <span style={{
+            fontFamily: 'Inter, sans-serif', fontSize: '12px', letterSpacing: '0.12em',
+            textTransform: 'lowercase', color: C.creamFaint,
+          }}>{label}</span>
+        </div>
+      )}
     </button>
   );
 });
@@ -840,27 +917,25 @@ function ChoosePhase({ onSelect, sparkles, audio }) {
           ref={frBoxRef}
           tripKey="france"
           className="box-fr"
-          label="frankrijk"
-          ribbonColor="#C9A84C"
+          ribbonColor="#D4AF37"
           materialPrefix="fr"
           onSelect={handleSelect}
           dismissed={dismissedBox === 'france'}
           selected={selectedBox === 'france'}
           lidOpen={false}
-          ariaLabel="Cadeau 1 — Frankrijk"
+          ariaLabel="Cadeau 1"
         />
         <GiftBox
           ref={deBoxRef}
           tripKey="germany"
           className="box-de"
-          label="duitsland"
-          ribbonColor="#D4953A"
+          ribbonColor="#D4AF37"
           materialPrefix="de"
           onSelect={handleSelect}
           dismissed={dismissedBox === 'germany'}
           selected={selectedBox === 'germany'}
           lidOpen={false}
-          ariaLabel="Cadeau 2 — Duitsland"
+          ariaLabel="Cadeau 2"
         />
       </div>
 
@@ -980,6 +1055,146 @@ function UnwrapPhase({ tripKey, onComplete, sparkles, audio }) {
         </div>
       </div>
     </section>
+  );
+}
+
+// ─── Stop Card (Accordion) ───────────────────────────────────────────────────
+
+function StopCard({ stop, index, total, visible, audio }) {
+  const [expanded, setExpanded] = useState(false);
+  const [contentHeight, setContentHeight] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState({});
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (!contentRef.current) return;
+    const observer = new ResizeObserver(() => {
+      if (contentRef.current) setContentHeight(contentRef.current.scrollHeight);
+    });
+    observer.observe(contentRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  const handleToggle = () => {
+    audio.playTick();
+    setExpanded(prev => !prev);
+  };
+
+  const handleImageLoad = (i) => {
+    setImagesLoaded(prev => ({ ...prev, [i]: true }));
+  };
+
+  return (
+    <div style={{
+      opacity: visible ? 1 : 0,
+      transform: visible ? 'translateY(0)' : 'translateY(24px)',
+      transition: 'all 0.5s ease',
+    }}>
+      {/* Clickable header */}
+      <button
+        onClick={handleToggle}
+        aria-expanded={expanded}
+        style={{
+          width: '100%', background: 'none', border: 'none', cursor: 'pointer',
+          padding: '20px 0', textAlign: 'left', outline: 'none',
+          display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between',
+          gap: '16px', touchAction: 'manipulation',
+          WebkitTapHighlightColor: 'transparent',
+        }}
+      >
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <p style={{
+            fontFamily: "'Inter', sans-serif", fontSize: '11px', fontWeight: 500,
+            color: C.gold, letterSpacing: '0.12em', textTransform: 'lowercase',
+            marginBottom: '8px',
+          }}>dag {stop.day}</p>
+          <h3 style={{
+            fontFamily: "'Playfair Display', Georgia, serif", fontSize: '20px',
+            color: C.cream, textTransform: 'lowercase', marginBottom: '4px', fontWeight: 700,
+          }}>{stop.name}</h3>
+          <p style={{
+            fontFamily: "'Inter', sans-serif", fontSize: '14px',
+            color: C.creamDim, lineHeight: 1.6, textTransform: 'lowercase',
+          }}>{stop.desc}</p>
+        </div>
+        {/* Chevron */}
+        <div style={{
+          marginTop: '28px', flexShrink: 0, width: '24px', height: '24px',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          transition: 'transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1)',
+          transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)',
+        }}>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M4 6L8 10L12 6" stroke={C.gold} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </div>
+      </button>
+
+      {/* Expandable content */}
+      <div style={{
+        overflow: 'hidden',
+        maxHeight: expanded ? `${contentHeight}px` : '0px',
+        transition: 'max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1)',
+      }}>
+        <div ref={contentRef} style={{ paddingBottom: '20px' }}>
+          {/* Detail text */}
+          <p style={{
+            fontFamily: "'Inter', sans-serif", fontSize: '14px',
+            color: C.creamDim, lineHeight: 1.7, marginBottom: '20px',
+          }}>{stop.detail}</p>
+
+          {/* Image gallery */}
+          {stop.images && stop.images.length > 0 && (
+            <div style={{
+              display: 'flex', gap: '10px', overflowX: 'auto',
+              scrollSnapType: 'x mandatory', WebkitOverflowScrolling: 'touch',
+              scrollbarWidth: 'none', margin: '0 -4px', padding: '0 4px',
+            }}>
+              {stop.images.map((img, i) => (
+                <div key={i} style={{
+                  flexShrink: 0, scrollSnapAlign: 'start',
+                  width: stop.images.length === 1 ? '100%' : 'calc(85% - 5px)',
+                  borderRadius: '6px', overflow: 'hidden', position: 'relative',
+                  background: '#1E1E30',
+                  aspectRatio: '16 / 10',
+                }}>
+                  {/* Shimmer placeholder */}
+                  {!imagesLoaded[i] && (
+                    <div style={{
+                      position: 'absolute', inset: 0,
+                      background: `linear-gradient(110deg, #1E1E30 30%, #2a2a44 50%, #1E1E30 70%)`,
+                      backgroundSize: '200% 100%',
+                      animation: 'shimmer 1.5s ease-in-out infinite',
+                    }} />
+                  )}
+                  <img
+                    src={img.url}
+                    alt={img.alt}
+                    loading="lazy"
+                    onLoad={() => handleImageLoad(i)}
+                    style={{
+                      width: '100%', height: '100%', objectFit: 'cover', display: 'block',
+                      opacity: imagesLoaded[i] ? 1 : 0,
+                      transition: 'opacity 0.4s ease',
+                    }}
+                  />
+                  {/* Subtle vignette overlay */}
+                  <div style={{
+                    position: 'absolute', inset: 0, pointerEvents: 'none',
+                    background: 'linear-gradient(to top, rgba(26,26,46,0.4) 0%, transparent 40%)',
+                  }} />
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Divider */}
+      {index < total - 1 && (
+        <div style={{ width: '100%', height: '1px', background: C.goldFaint }} />
+      )}
+    </div>
   );
 }
 
@@ -1175,36 +1390,13 @@ function RevealPhase({ tripKey, sparkles, audio }) {
           </svg>
         </div>
 
-        {/* Stop cards */}
+        {/* Stop cards (accordion) */}
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           {trip.stops.map((stop, i) => {
             const visible = visibleCards.includes(i);
             return (
-              <div key={i} style={{
-                paddingTop: '20px', paddingBottom: '20px',
-                opacity: visible ? 1 : 0,
-                transform: visible ? 'translateY(0)' : 'translateY(24px)',
-                transition: 'all 0.5s ease',
-              }}>
-                <p style={{
-                  fontFamily: "'Inter', sans-serif", fontSize: '11px', fontWeight: 500,
-                  color: C.gold, letterSpacing: '0.12em', textTransform: 'lowercase',
-                  marginBottom: '8px',
-                }}>dag {stop.day}</p>
-                <h3 style={{
-                  fontFamily: "'Playfair Display', Georgia, serif", fontSize: '20px',
-                  color: C.cream, textTransform: 'lowercase', marginBottom: '4px', fontWeight: 700,
-                }}>{stop.name}</h3>
-                <p style={{
-                  fontFamily: "'Inter', sans-serif", fontSize: '14px',
-                  color: C.creamDim, lineHeight: 1.6, textTransform: 'lowercase',
-                }}>{stop.desc}</p>
-                {i < trip.stops.length - 1 && (
-                  <div style={{
-                    width: '100%', height: '1px', background: C.goldFaint, marginTop: '20px',
-                  }} />
-                )}
-              </div>
+              <StopCard key={i} stop={stop} index={i} total={trip.stops.length}
+                visible={visible} audio={audio} />
             );
           })}
         </div>
@@ -1219,9 +1411,21 @@ function RevealPhase({ tripKey, sparkles, audio }) {
           <div className={`final-line ${finalLineVisible ? 'visible' : ''}`} style={{ marginBottom: '32px' }} />
           <p style={{
             fontFamily: "'Playfair Display', Georgia, serif",
-            fontSize: 'clamp(22px, 7vw, 36px)',
-            color: C.gold, textTransform: 'lowercase',
-          }}>ik hou van je</p>
+            fontSize: 'clamp(20px, 6vw, 32px)',
+            color: C.cream, textAlign: 'center',
+            lineHeight: 1.6, marginBottom: '8px',
+          }}>Een hele fijne verjaardag.</p>
+          <p style={{
+            fontFamily: "'Playfair Display', Georgia, serif",
+            fontSize: 'clamp(20px, 6vw, 32px)',
+            color: C.gold,
+            lineHeight: 1.6, marginBottom: '8px',
+          }}>Ik hou van jou!</p>
+          <p style={{
+            fontFamily: "'Inter', sans-serif", fontSize: '14px',
+            color: C.creamDim, marginTop: '16px',
+            letterSpacing: '0.1em',
+          }}>Kusjes van Tom.</p>
         </div>
       </div>
     </section>
